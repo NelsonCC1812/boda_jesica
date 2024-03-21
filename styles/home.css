@@ -1,0 +1,22 @@
+body {
+    background: url('../images/paperboard-texture.jpg');
+}
+
+.hero {
+    background-image: url('../images/acuarela.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    min-width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-family: 'Josephy';
+    font-weight: 100;
+    font-size: 9rem;
+}

@@ -1,0 +1,29 @@
+@import url('reboot.css');
+
+@font-face {
+    font-family: 'Bilbo';
+    src: url('fonts/BilboSwashCaps-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Waterfall';
+    src: url('fonts/Waterfall-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Josephy';
+    src: url('fonts/josephsophia.otf');
+}
+
+@font-face {
+    font-family: 'Cathy';
+    src: url('fonts/Cathylise\ Janetson.otf');
+}
+
+:root {
+    --base: #FFE0AB;
+    --main: #FFEAAB;
+    --resalt: #FFC5AB;
+    --resalt2: #FFF5AB;
+    --main2: #FFD3AB;
+}
