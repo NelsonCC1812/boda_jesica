@@ -1,0 +1,1 @@
+const clickRef = e => navigator.clipboard.writeText(e.innerText)

@@ -15,11 +15,63 @@
 </head>
 
 <body>
+
     <main>
         <section class="hero">
             <h1>&#57398;esic&#57354;hecto&#57415;</h1>
         </section>
+
+        <section>
+
+            <h2>Información</h2>
+            <img class="line-break" src="images/line-break.png" alt="">
+
+            <p>Si se quieren quedar en el hotel, pueden reservar en los números de teléfono <a
+                    href="tel:+34928546054">928546054</a>/<a href="tel:+34928546055">928546055</a> o reservar a través
+                del correo: <a href="mailto:reservas.grupos@r2hotels.com">reservas.grupos@r2hotels.com</a></p>
+
+            <p><b>La referencia que deben aportar es la siguiente: <span id="ref"
+                        onclick="clickRef(this)">257885</span></b></p>
+
+        </section>
+
+
+        <section class="section-form">
+
+            <h2>Confirmar asistencia</h2>
+            <img class="line-break" src="images/line-break.png" alt="">
+
+
+            <form action="#" method="post">
+
+                <div>
+                    <label for="name">Nombre y apellidos</label>
+                    <input id="name" type="text" placeholder="Nombre y apellidos">
+                </div>
+                <div>
+                    <label for="companion">Acompañante</label>
+                    <input id="companion" type="text" placeholder="Acompañante">
+                </div>
+                <div>
+                    <label for="withKids">¿Llevan niños?</label>
+                    <input id="withKids" type="checkbox" name="withKids">
+                </div>
+
+                <div class="textarea-container">
+                    <label for="others">Necesidades especiales</label>
+                    <textarea name="others" id="others" cols="30" rows="10"
+                        placeholder="Alergias, dieta vegana..."></textarea>
+                </div>
+
+                <button class="btn-form" type="submit">Confirmar</button>
+
+            </form>
+        </section>
+
     </main>
 </body>
+
+<script src="scripts/makeRefCopiable.js"></script>
+
 
 </html>
