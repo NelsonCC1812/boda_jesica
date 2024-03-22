@@ -26,11 +26,14 @@
 }
 
 
-
 :root {
     --c-base: #FFE0AB;
     --c-main: #FFEAAB;
     --c-resalt: #FFC5AB;
     --c-resalt2: #FFF5AB;
     --c-main2: #FFD3AB;
+}
+
+.hidden {
+    display: none;
 }

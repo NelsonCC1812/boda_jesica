@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>J&H</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!--scripts-->
-    <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore-compat.js"></script>
     <!--styles-->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/home.css">
@@ -63,6 +60,9 @@
                         placeholder="Alergias, dieta vegana..."></textarea>
                 </div>
 
+                <p id="form-correct" class="msg msg-correct hidden">Mandado correctamente</p>
+                <p id="form-error" class="msg msg-error hidden">Ha habido un error</p>
+
                 <button class="btn-form" onclick="sendForm(event)">Confirmar</button>
 
             </form>
@@ -70,7 +70,11 @@
 
     </main>
 </body>
+<!--scripts-->
+<script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore-compat.js"></script>
 
+<script src="firebase.key.js"></script>
 <script src="scripts/makeRefCopiable.js"></script>
 <script src="scripts/db.js"></script>
 
