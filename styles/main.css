@@ -37,3 +37,11 @@
 .hidden {
     display: none;
 }
+
+.form-error {
+    color: red
+}
+
+.form-correct {
+    color: green
+}
