@@ -5,15 +5,11 @@ body {
 /* *=> general */
 
 section {
-    padding: 5rem;
+    padding: 5rem 0;
 }
 
 h2 {
     text-transform: capitalize;
-}
-
-h2 {
-
     font-family: 'Cathy';
     font-weight: 100;
     font-size: 7rem;
@@ -39,6 +35,7 @@ span:hover {
 }
 
 img.line-break {
+    width: 85%;
     display: block;
     margin: 0 auto;
     margin-bottom: 5rem;
@@ -64,6 +61,7 @@ form {
     background-size: cover;
     min-height: 100vh;
     min-width: 100vw;
+    padding: 0;
 
     display: flex;
     justify-content: center;
@@ -72,10 +70,10 @@ form {
     margin-bottom: 2rem;
 }
 
-.hero h1 {
-    font-family: 'joseph';
-    font-weight: 100;
-    font-size: 10rem;
+.hero img {
+    border-radius: 5px;
+    max-height: 95vh;
+    border-style: outset;
 }
 
 /* *=> form */
@@ -107,7 +105,7 @@ form {
 }
 
 .section-form label {
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 600;
     white-space: nowrap;
     font-family: 'ojuju';
@@ -145,6 +143,7 @@ form {
 .section-form .checkbox-container {
     width: min-content;
     flex-direction: row;
+    align-items: center;
 }
 
 .section-form .checkbox-container input {
@@ -154,4 +153,47 @@ form {
 
 .textarea-container {
     flex-direction: column;
+}
+
+
+@media (max-width: 1300px) {
+    h2 {
+        font-size: 5rem;
+    }
+
+    .hero img {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    h2 {
+        font-size: 3rem;
+    }
+
+    img.line-break {
+        width: 95%;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .section-form label {
+        font-size: 1.2rem;
+    }
+
+    .section-form .checkbox-container input {
+        width: 2rem;
+    }
+
+    .section-form .btn-form {
+        align-self: center;
+    }
+
+    section {
+        padding: 1rem 0;
+    }
 }
