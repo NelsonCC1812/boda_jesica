@@ -2,11 +2,12 @@ body {
     background: url('../images/paperboard-texture.jpg');
 }
 
+/* *=> general */
+
 section {
     padding: 5rem;
 }
 
-h1,
 h2 {
     text-transform: capitalize;
 }
@@ -24,9 +25,9 @@ p {
     text-align: center;
     margin: 2rem auto;
 
-    font-family: var(--l-bilbo);
+    font-family: 'ojuju';
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 
 span {
@@ -52,6 +53,10 @@ form {
     flex-direction: column;
 }
 
+/* *=> sections */
+
+/* *=> hero */
+
 .hero {
     background-image: url('../images/acuarela.png');
     background-position: center;
@@ -68,34 +73,85 @@ form {
 }
 
 .hero h1 {
-    font-family: 'Josephy';
+    font-family: 'joseph';
     font-weight: 100;
     font-size: 10rem;
 }
 
-button.btn-form {
-    width: fit-content;
-    height: fit-content;
-    padding: .5rem 1rem;
-    border-radius: 5px;
-    border: .1px solid black;
-    background-color: #daa023;
-}
+/* *=> form */
 
-form {
-    text-align: center;
-}
-
-input {
-    width: 20rem;
-}
-
-.textarea-container {
+.section-form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-textarea {
-    width: 70%;
+.section-form form {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline
+}
+
+.section-form input {
+    width: 100%;
+    height: 2.2rem;
+}
+
+.section-form textarea {
+    width: 100%;
+    text-align: left;
+}
+
+.section-form label {
+    font-size: 1.3rem;
+    font-weight: 600;
+    white-space: nowrap;
+    font-family: 'ojuju';
+}
+
+.section-form label::after {
+    content: ':';
+}
+
+.section-form div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: .5rem 0;
+}
+
+.section-form .btn-form {
+
+    font-family: 'ojuju';
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    width: fit-content;
+    height: fit-content;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    border: .1px solid black;
+    background-color: #daa023;
+
+    margin-top: 1.5rem;
+    align-self: flex-end;
+}
+
+.section-form .checkbox-container {
+    width: min-content;
+    flex-direction: row;
+}
+
+.section-form .checkbox-container input {
+    margin-left: .8rem;
+    width: 1.2rem;
+}
+
+.textarea-container {
+    flex-direction: column;
 }
