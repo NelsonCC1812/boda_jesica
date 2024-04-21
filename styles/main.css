@@ -25,6 +25,10 @@
     src: url('fonts/Ojuju-VariableFont_wght.ttf');
 }
 
+@font-face {
+    font-family: 'script';
+    src: url('fonts/Anything Font/Anything Script_2 TTF.ttf');
+}
 
 :root {
     --c-base: #FFE0AB;
