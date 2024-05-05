@@ -5,17 +5,27 @@ body {
     background-size: cover;
 }
 
+.no-space {
+    margin-top: -2rem;
+}
+
+input,
+textarea {
+    border: none;
+    border-radius: 8px;
+}
+
 .main-title {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 4rem;
+    margin-bottom: 6.5rem;
 }
 
 .main-title h1 {
     font-family: 'script';
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 100;
 }
 
@@ -51,7 +61,7 @@ body {
 
     text-transform: capitalize;
     font-family: 'ojuju';
-    font-weight: 100;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -63,14 +73,14 @@ body {
 /* *=> general */
 
 section {
-    padding: 5rem 0;
+    padding: 1rem 0;
 }
 
 h2 {
     text-transform: capitalize;
-    font-family: 'ojuju';
-    font-weight: 100;
-    font-size: 2rem;
+    font-family: 'cathy';
+    font-weight: 300;
+    font-size: 2.5rem;
     text-align: center;
 
 }
@@ -80,13 +90,14 @@ p {
     text-align: center;
     margin: 2rem auto;
 
-    font-family: 'ojuju';
+    font-family: 'Arial';
     font-weight: 300;
     font-size: 1.2rem;
 }
 
 span {
-    color: #3347e3;
+    color: black;
+    font-weight: bolder;
 }
 
 span:hover {
@@ -101,7 +112,10 @@ img.line-break {
 }
 
 a {
-    color: #7080f0;
+    font-size: 1.2rem;
+    color: black;
+    font-style: italic;
+    font-weight: bolder;
 }
 
 form {
@@ -114,7 +128,8 @@ form {
 /* *=> hero */
 
 .hero {
-    margin-top: 2rem;
+
+    min-height: 100vh;
 
     /* background-image: url('../images/acuarela.png'); */
     background-position: center;
@@ -126,9 +141,8 @@ form {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 3rem;
 }
 
 .hero>img {
@@ -139,6 +153,11 @@ form {
     width: 95%;
 }
 
+/*alojamiento*/
+#alojamiento-title {
+    font-size: 3rem;
+}
+
 /* *=> form */
 
 .section-form {
@@ -147,6 +166,11 @@ form {
     justify-content: center;
     align-items: center;
 }
+
+.section-form h2 {
+    margin-bottom: 1rem;
+}
+
 
 .section-form form {
     width: 80%;
@@ -169,9 +193,9 @@ form {
 
 .section-form label {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     white-space: nowrap;
-    font-family: 'ojuju';
+    font-family: 'Arial';
 }
 
 .section-form label::after {
@@ -188,16 +212,16 @@ form {
 
 .section-form .btn-form {
 
-    font-family: 'ojuju';
-    font-size: 1.5rem;
+    font-family: 'Arial';
+    font-size: 1rem;
     font-weight: 500;
 
     width: fit-content;
     height: fit-content;
-    padding: .5rem 2rem;
+    padding: .5rem 1.5rem;
     border-radius: 5px;
-    border: .1px solid black;
-    background-color: #daa023;
+    border: none;
+    background-color: rgb(54, 221, 196);
 
     margin-top: 1.5rem;
     align-self: flex-end;
@@ -206,7 +230,7 @@ form {
 .section-form .checkbox-container {
     width: min-content;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
 }
 
 .section-form .checkbox-container input {
@@ -216,4 +240,20 @@ form {
 
 .textarea-container {
     flex-direction: column;
+}
+
+
+#kidsNumber {
+    height: 1.5rem;
+    width: 1.5rem;
+    -webkit-appearance: none;
+}
+
+/* dress-code */
+.section-dress-code h2 {
+    margin-top: 2.5rem;
+}
+
+.dress-code label {
+    white-space: wrap;
 }
