@@ -13,6 +13,13 @@
 
 <body>
 
+    <audio preload="auto" autoplay>
+        <source src="audio/Ed Sheeran - Perfect.mp3" type="audio/mpeg">
+        <source src="audio/Ed Sheeran - Perfect.ogg" type="audio/ogg">
+        <source src="audio/Ed Sheeran - Perfect.wav" type="audio/wav">
+    </audio>
+
+
     <main>
         <section class="hero">
             <!-- <img src="images/hero/hero1.jpeg" alt="">
@@ -34,6 +41,11 @@
                 <h4>2024</h4>
             </div>
 
+            <div class="place-title">
+                <h3>Hotel Río Calma</h3>
+                <h3>Fuerteventura</h3>
+            </div>
+
         </section>
 
         <section>
@@ -45,9 +57,10 @@
                     href="tel:+34928546054">928546054</a>/<a href="tel:+34928546055">928546055</a></p>
             <p class="no-space">
                 o a través del correo: <a href="mailto:reservas.grupos@r2hotels.com">reservas.grupos@r2hotels.com</a>
-                para hacer tu reserva.</p>
+            </p>
 
-            <p>La referencia que deben aportar es la siguiente: <span id="ref" onclick="clickRef(this)">257885</span>
+            <p>
+                La referencia que debes aportar es la siguiente: <span id="ref" onclick="clickRef(this)">257885</span>
             </p>
 
             <section class="section-form">
@@ -88,26 +101,24 @@
 
                 <h2>Dress Code</h2>
 
-                <p>
-                    Importante! Venid guapos, guapísimos, pero es una fiesta en terrazas con vistas al mar, donde la
-                    prioridad será siempre verlos a todos bailar y darlo todo!
-                </p>
-                <p>
-                    Estarán prohibidas las chaquetas y las corbatas, y cualquier zapato incómodo que les dificulte
-                    saltar,
-                    brincar y aguantar hasta el final.... En definitiva, cada uno con su flow... pero no se compliquen,
-                    vengan a gusto, vengan cómodos, pero eso sí, vengan cargados de energía, que nosotros prometemos
+                <p>Vengan guapos, guapísimos. Importante: No son imprescindibles chaquetas, corbatas, o cualquier
+                    zapato
+                    incómodo que dificulte saltar, brincar y aguantar hasta el final....</p>
+                <p>Es una fiesta en terrazas con vistas al mar, donde la prioridad será siempre verlos a todos
+                    bailar y
+                    darlo todo!</p>
+                <p>En definitiva, vengan cómodos, vengan a gusto, vengan cargados de energía, nosotros prometemos
                     poner
-                    el resto para vivir juntos un día inolvidable.
-                </p>
+                    el resto para vivir juntos un día inolvidable.</p>
+
 
             </section>
 
             <section class="section-form dress-code">
                 <form action="post">
                     <div>
-                        <label for="music">¡No te olvides! Dinos que canción te hace mover el esqueleto</label>
-                        <input type="text" name="music" id="music">
+                        <label for="music">¿Qué canción te hace vibrar?</label>
+                        <input type="text" name="music" id="music" placeholder="La Macarena">
                     </div>
                     <button class="btn-form" onclick="sendForm(event)">Enviar</button>
                 </form>
@@ -115,7 +126,11 @@
             </section>
 
     </main>
+
 </body>
+
+<script src="scripts/playMusic.js"></script>
+
 <!--scripts-->
 <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore-compat.js"></script>
