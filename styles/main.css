@@ -1,21 +1,6 @@
 @import url('reboot.css');
 
 @font-face {
-    font-family: 'bilbo';
-    src: url('fonts/BilboSwashCaps-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'waterfall';
-    src: url('fonts/Waterfall-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'joseph';
-    src: url('fonts/josephsophia.otf');
-}
-
-@font-face {
     font-family: 'cathy';
     src: url('fonts/Cathylise\ Janetson.otf');
 }
