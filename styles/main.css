@@ -27,10 +27,10 @@
     display: none;
 }
 
-.form-error {
+.msg-error {
     color: red
 }
 
-.form-correct {
+.msg-correct {
     color: green
 }

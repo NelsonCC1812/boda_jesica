@@ -5,6 +5,10 @@ body {
     background-size: cover;
 }
 
+.no-line {
+    margin-bottom: -2rem;
+}
+
 .no-space {
     margin-top: -2rem;
 }
@@ -13,6 +17,7 @@ input,
 textarea {
     border: none;
     border-radius: 8px;
+    font-size: 1rem;
 }
 
 .main-title {
@@ -257,6 +262,22 @@ form {
     flex-direction: column;
 }
 
+label[for="music"] p {
+    margin: 0
+}
+
+label[for="music"]::after {
+    content: "";
+}
+
+#music-form input {
+    margin-top: 1rem;
+}
+
+#music-form button {
+    margin-top: 0;
+}
+
 
 #kidsNumber {
     height: 1.5rem;
@@ -269,6 +290,7 @@ form {
     margin-top: 2.5rem;
 }
 
-.dress-code label {
+.dress-code label p {
     white-space: wrap;
+    text-align: left;
 }

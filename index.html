@@ -69,7 +69,7 @@
                 <h2>Confirmar asistencia</h2>
 
 
-                <form action="" method="post">
+                <form id="confirm-form" action="" method="post">
 
                     <div>
                         <label for="name">Nombre y apellidos</label>
@@ -90,10 +90,10 @@
                             placeholder="Alergias, dieta vegana..."></textarea>
                     </div>
 
-                    <p id="form-correct" class="msg msg-correct hidden">Mandado correctamente</p>
-                    <p id="form-error" class="msg msg-error hidden">Ha habido un error</p>
+                    <p id="confirm-form-correct" class="msg msg-correct hidden">Mandado correctamente</p>
+                    <p id="confirm-form-error" class="msg msg-error hidden">Ha habido un error</p>
 
-                    <button class="btn-form" onclick="sendForm(event)">Confirmar</button>
+                    <button class="btn-form" onclick="sendFormConfirm(event)">Confirmar</button>
 
                 </form>
             </section>
@@ -102,26 +102,32 @@
 
                 <h2>Dress Code</h2>
 
-                <p>Vengan guapos, guapísimos. Importante: No son imprescindibles chaquetas, corbatas, o cualquier
-                    zapato
-                    incómodo que dificulte saltar, brincar y aguantar hasta el final....</p>
-                <p>Es una fiesta en terrazas con vistas al mar, donde la prioridad será siempre verlos a todos
-                    bailar y
-                    darlo todo!</p>
-                <p>En definitiva, vengan cómodos, vengan a gusto, vengan cargados de energía, nosotros prometemos
-                    poner
-                    el resto para vivir juntos un día inolvidable.</p>
+                <p class="no-line">Vengan guapos, guapísimos.</p>
 
+                <p> Pueden dejarse atrás las chaquetas, corbatas, o cualquier zapato incómodo
+                    que dificulte saltar, brincar y aguantar hasta el final.</p>
+
+                <p>Es una fiesta en terrazas con vistas al mar, donde la prioridad será siempre verlos a todos
+                    bailar y darlo todo!</p>
+
+                <p>En definitiva, vengan cómodos, vengan a gusto, vengan cargados de energía.</p>
 
             </section>
 
             <section class="section-form dress-code">
-                <form action="post">
+                <form id="music-form" action="" method="post">
                     <div>
-                        <label for="music">¿Qué canción te hace vibrar?</label>
+                        <label for="music">
+                            <p>¿Nos ayudas con la música?</p>
+                            <p>¿Qué canción te hace vibrar?
+                        </label>
                         <input type="text" name="music" id="music" placeholder="La Macarena">
                     </div>
-                    <button class="btn-form" onclick="sendForm(event)">Enviar</button>
+
+                    <p id="music-form-correct" class="msg msg-correct hidden">Mandado correctamente</p>
+                    <p id="music-form-error" class="msg msg-error hidden">Ha habido un error</p>
+
+                    <button class="btn-form" onclick="sendFormMusic(event)">Enviar</button>
                 </form>
 
             </section>

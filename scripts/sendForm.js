@@ -1,4 +1,4 @@
-const sendForm = async e => {
+const sendFormConfirm = async e => {
     e.preventDefault()
 
     const form = {
@@ -8,9 +8,26 @@ const sendForm = async e => {
         others: document.querySelector('#others').value
     }
 
+    if (validateConfirmForm(form) && !(await sendConfirm(form))) {
+        document.querySelector('#confirm-form-correct').classList.remove('hidden')
+        resetConfirmForm()
+    } else {
+        document.querySelector('#confirm-form-error').classList.remove('hidden')
+    }
+}
 
-    if (!validateForm(form) && !(await sendData(form))) document.querySelector('#form-error').classList.remove('hidden')
 
-    document.querySelector('#form-correct').classList.remove('hidden')
-    resetForm()
+const sendFormMusic = async e => {
+    e.preventDefault()
+
+    const form = {
+        music: document.querySelector('#music').value,
+    }
+
+    if (validateMusicForm(form) && !(await sendMusic(form))) {
+        document.querySelector('#music-form-correct').classList.remove('hidden')
+        resetMusicForm()
+    } else {
+        document.querySelector('#music-form-error').classList.remove('hidden')
+    }
 }
