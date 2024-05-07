@@ -27,6 +27,11 @@
     display: none;
 }
 
+.msg {
+    text-align: center;
+    margin: 0;
+}
+
 .msg-error {
     color: red
 }
